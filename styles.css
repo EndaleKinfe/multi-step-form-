@@ -1,3 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root{
+    --font-one: "ubuntu"; 
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%); 
+    --cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%) ;
+    --Alabaster: hsl(231, 100%, 99%) ;
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;  
+}
+
+body{
+    background-color: var(--Light-gray);
+    font-size: 16px;
+    font-family: var(--font-one);
+    overflow: hidden;
+}
+.main-section{
+    display: flex;
+
+    width: 946px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 30px;
+    background-color: var(--White);
+}
+
+.sidebar{
+    width: 30% ;
+    height: 93%;
+    background-image: url("./assets/images/bg-sidebar-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    margin: 20px;
+    border-radius: 10px;
+    padding:30px 30px 25px 30px;
+}
+
+.selector{
+    height:65px;
+    display: flex;
+    margin: 10px 0;
+
+}
+
+.p-num {
+    color: var(--cool-gray);
+    text-transform: uppercase;
+}
+
+.p-title{
+    color: var(--White);
+    text-transform: uppercase;
+}
+
+.step-num {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--White);
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 10px;
+    margin-top: 3px;
+    color: var(--White);
+}
+
+.step-form{
+    width: 70%;
+    height: 93%;
+    margin: 20px;
+}
+
+.step{
+    width: 85%;
+    height: 95%;
+    margin: 40px;
+    padding-top: 30px;
+}
+
+.step h1{
+    font-size: 35px;
+    text-align: left;
+    color: var(--Marine-blue);
+}
+
+.step p{
+    color: var(--cool-gray);
+    margin: 10px 0;
+}
+
+.step label {
+    display: block;
+    margin: 25px 0 10px 0;
+    color: var(--Marine-blue);
+}
+
+#form1 input{
+    width: 450px;
+    height: 50px;
+    color: var(--cool-gray);
+    border: 1px solid var(--cool-gray) ;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.navigate-steps{
+    margin: 85px 0 15px 0;
+    display: flex;
+}
+
+.step .left{
+    width: 60%;
+}
+.step .right{
+ width: 40%;
+ padding-left: 75px;
+}
+
+.step .right button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    border: none;
+    border-radius: 8px;
+
+}
+
+.step .left button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+
+}
+
 .hidden{
-    display:none;
+    display: none ;
 }

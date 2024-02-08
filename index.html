@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./script.js">
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Multi-step form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,44 +16,52 @@
 </head>
 <body>
 
+  <div class="main-section">
 
   <div class="sidebar">
     <div class="step1-selector selector">
-      <div class="step-num"></div>
-      <p>Step 1</p>
-      <p>Your info</p>
+      <div class="step-num">1</div>
+      <div class="step-detail">
+        <p class="p-num"> Step 1</p>
+        <p class="p-title">Your info</p>
+      </div>
+      
     </div>
     <div class="step2-selector selector">
-      <div class="step-num"></div>
-      <p>Step 2</p>
-      <pSelect plan></p>
+      <div class="step-num">2</div>
+      <div class="step-detail">
+        <p class="p-num"> Step 2</p>
+        <p class="p-title">Select plan</p>
+      </div>
+
     </div>
       <div class="setp3-selector selector">
-        <div class="step-num"></div>
-        <p>Step 3</p>
-        <p>Add-ons</p>
+        <div class="step-num">3</div>
+        <div class="step-detail">
+          <p class="p-num"> Step 3</p>
+          <p class="p-title">Add-ons</p>
+        </div>
+       
       </div>
       
       <div class="step4-selector selector">
-        <div class="step-num"></div>
-        <p> Step 4</p>
-        <p>Summary</p>
-       
+        <div class="step-num">4</div>
+        <div class="step-detail">
+            <p class="p-num"> Step 4</p>
+            <p class="p-title">Summary</p>
+        </div>
       </div>
  </div>
 
 
 
-  <div class="step-sidebar">
+  <div class="step-forms">
 
-  </div>
-
-
-  
-<div class="step1">
+  <div class="step1 hidden step" id="step-one">
   <h1> Personal info</h1>
   <p>Please provide your name, email address, and phone number.</p>
-  
+
+  <form id="form1">
   <label for="name">Name</label>
   <input type="text" id="name" placeholder="Stephen King">
 
@@ -63,13 +71,18 @@
   <label for="phone">Phone Number</label>
   <input type="text"  id="phone" placeholder="+1 234 567 890">
    
-  <button id="nextBtn">Next Step</button>
+  <div class="navigate-steps">
+    <div class="left">
+    </div>
+    <div class="right">
+      <button id="nextBtn1">Next Step</button></div>
+  </div>
+</form>
   
 </div>
-<div class="step2">
-  
-  
-  
+<div class="step2 hidden step" id="step-two">
+<h1>Select your plan</h1>
+<p>You have the option of monthly or yearly billing.</p>
   <div type="radio">
       Arcade
       $9/mo
@@ -87,14 +100,20 @@ $15/mo</div>
   </div>
   
   
-  <button> Go Back</button>
-  <button>Next Step</button>
- 
+  <div class="navigate-steps">
+    <div class="left">
+      <p id="back1"> Go Back</p>
+    </div>
+    <div class="right">
+      <button id="nextBtn2">Next Step</button>
+    </div>
+  </div>
   
 </div>
-<div class="step3">
+<div class="step3 hidden step" id="step-three">
  <h1>Pick add-ons</h1>
   <p>Add-ons help enhance your gaming experience.</p>
+  <form id="form3">
   <div class="addon-item " id="addon-one">
     <div class="checkbox">
       <input type="checkbox" name="" id="addon-checkbox-1">
@@ -130,10 +149,18 @@ $15/mo</div>
     <div class="addon-price">+$2/mo</div>
   </div>
 
-    <button> Go Back</button>
-    <button>Next Step</button>
+    
+    <div class="navigate-steps">
+      <div class="left">
+        <p id="back2"> Go Back</p>
+      </div>
+      <div class="right">
+        <button id="nextBtn3">Next Step</button>
+      </div>
+    </div>
+    </form>
 </div>
-<div class="step4">
+<div class="step4 hidden step" id="step-four">
   <h1>Finishing up</h1>
   
   <p>Double-check everything looks OK before confirming.</p>
@@ -153,20 +180,30 @@ $15/mo</div>
 
   <p>Total (per month/year)</p>
   
-  <button> Go Back</button>
-  <button>Confirm</button>
-  
+  <form id="form4">
+    <div class="navigate-steps">
+      <div class="left">
+        <p id="back3"> Go Back</p>
+      </div>
+      <div class="right">
+       <button id="confirmBtn">Confirm</button>
+      </div>
+    </div>
+  </form>
 </div>
   
-<div class="thanks">
-  Thank you!
-  
+<div class="step5 hidden step" id="step-five">
+  <div class="icon"></div>
+  <h1>Thank you!</h1>
+  <p>
   Thanks for confirming your subscription! We hope you have fun
   using our platform. If you ever need support, please feel free
   to email us at support@loremgaming.com.
+  </p>
 </div>
  
-  
+</div>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
