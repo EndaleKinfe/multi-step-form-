@@ -36,6 +36,8 @@ body{
     background-color: var(--White);
 }
 
+/* SIDEBAR STYLES */
+
 .sidebar{
     width: 30% ;
     height: 93%;
@@ -49,7 +51,7 @@ body{
 }
 
 .selector{
-    height:65px;
+    height:55px;
     display: flex;
     margin: 10px 0;
 
@@ -76,6 +78,9 @@ body{
     margin-top: 3px;
     color: var(--White);
 }
+/* SIDEBAR SYLE END */
+
+/* ALL STEP FORM PAGES STYLE*/
 
 .step-form{
     width: 70%;
@@ -107,29 +112,21 @@ body{
     color: var(--Marine-blue);
 }
 
-#form1 input{
-    width: 450px;
-    height: 50px;
-    color: var(--cool-gray);
-    border: 1px solid var(--cool-gray) ;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.navigate-steps{
+.navigate-steps {
     margin: 85px 0 15px 0;
     display: flex;
 }
 
-.step .left{
+.step .left {
     width: 60%;
 }
-.step .right{
- width: 40%;
- padding-left: 75px;
+
+.step .right {
+    width: 40%;
+    padding-left: 75px;
 }
 
-.step .right button{
+.step .right button {
     display: block;
     width: 100px;
     height: 40px;
@@ -148,6 +145,120 @@ body{
     color: var(--White);
 
 }
+
+/* ALL STEP FORM PAGES STYLE END */
+
+/* STEP ONE PAGE STYLE */
+#form1 input{
+    width: 450px;
+    height: 50px;
+    color: var(--cool-gray);
+    border: 1px solid var(--cool-gray) ;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+/* STEP ONE PAGE STYLE END */
+/* STEP TWO PAGE STYLE */
+.radio-group{
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio{
+    width: 150px;
+    height: 170px;
+    border: 2px solid var(--Light-gray);
+    border-radius: 10px;
+    margin: 40px 10px 30px 10px;
+    padding: 10px;
+}
+
+.plan-img{
+    width: 95%;
+    height: 60%;
+}
+
+.selected{
+    border: 2px solid var(--Purplish-blue);
+    background-color: var(--Alabaster);
+    opacity: 80%;
+}
+
+.period-select{
+    height: 50px;
+    background-color: var(--Magnolia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.toggle{
+    width: 45px;
+    height: 21px;
+    background-color: var(--Marine-blue);
+    margin: 10px 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.t-left{
+    width: 15px;
+    height: 15px;
+    background-color: var(--Alabaster);
+    border-radius: 50px;
+    margin: 3px 5px 6px 5px;
+}
+
+.t-right {
+    width: 15px;
+    height: 15px;
+    background-color: var(--Alabaster);
+    border-radius: 50px;
+    margin: 3px 5px 6px 25px;
+}
+
+.period{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--cool-gray);
+}
+.p-selected{
+    color: var(--Marine-blue);
+}
+
+
+/* STEP TWO PAGE END */
+
+/* STEP THREE PAGE  */
+
+.addon-item{
+    display: flex;
+    
+    align-items: center;
+    width: 450px;
+    height: 70px;
+    border: 2px solid var(--cool-gray);
+    margin: 20px 0 ;
+}
+
+.checkbox{
+    width: 20px;
+    margin: 0 30px;
+}
+.checkbox input{
+    width: 20px;
+    height: 19px;
+    background-color: var(--Purplish-blue);
+}
+
+
+
+/* STEP THREE PAGE END */
 
 .hidden{
     display: none ;

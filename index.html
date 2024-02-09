@@ -83,20 +83,28 @@
 <div class="step2 hidden step" id="step-two">
 <h1>Select your plan</h1>
 <p>You have the option of monthly or yearly billing.</p>
-  <div type="radio">
-      Arcade
-      $9/mo
+<div class="radio-group">
+  <div class="radio selected">
+    <div class="plan-img"><img src="./assets/images/icon-arcade.svg" alt=""></div>
+    <h3>Arcade</h3>
+     <p class="mm-yy-price">$9/mo</p> 
   </div>
-  <div type="radio">
-    Advanced
-    $12/mo
+  <div class="radio">
+    <div class="plan-img"><img src="./assets/images/icon-advanced.svg" alt=""></div>
+    <h3>Advanced</h3>
+    <p class="mm-yy-price">$12/mo</p>
   </div>
   
- <div type = "radio">Pro
-$15/mo</div>
-  <div>
-    Monthly
-    Yearly
+ <div class = "radio">
+  <div class="plan-img"><img src="./assets/images/icon-pro.svg" alt=""></div>
+  <h3>Pro</h3>
+  <p class="mm-yy-price">$15/mo</p>
+  </div>
+</div>
+  <div class="period-select">
+    <div class="period p-selected">Monthly</div>
+    <div class="toggle"><div class="t-left"></div></div>
+    <div class="period">Yearly</div>
   </div>
   
   
@@ -110,7 +118,7 @@ $15/mo</div>
   </div>
   
 </div>
-<div class="step3 hidden step" id="step-three">
+<div class="step3  step" id="step-three">
  <h1>Pick add-ons</h1>
   <p>Add-ons help enhance your gaming experience.</p>
   <form id="form3">
